@@ -593,4 +593,1310 @@
 
     .feature-title {
       font-size: 0.95rem;
-      margi
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+
+    .feature-text {
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    /* CLASSES & SCHEDULE */
+    .classes-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 1.5rem;
+      align-items: start;
+    }
+
+    .class-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.9rem;
+    }
+
+    .class-card {
+      padding: 0.9rem;
+      border-radius: var(--radius-lg);
+      background: rgba(10, 11, 18, 0.96);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      font-size: 0.8rem;
+    }
+
+    .class-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: var(--muted);
+      margin-bottom: 0.35rem;
+    }
+
+    .class-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .class-level {
+      font-size: 0.7rem;
+      color: var(--muted);
+      margin-bottom: 0.2rem;
+    }
+
+    .class-meta-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.6rem;
+      margin-top: 0.3rem;
+      font-size: 0.7rem;
+      color: var(--muted);
+    }
+
+    .class-meta-row span strong {
+      color: #ffffff;
+    }
+
+    .schedule-card {
+      border-radius: var(--radius-xl);
+      background: linear-gradient(145deg, rgba(14, 16, 26, 0.97), rgba(5, 6, 8, 0.97));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 1rem;
+      box-shadow: var(--shadow-soft);
+      font-size: 0.8rem;
+    }
+
+    .schedule-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.8rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .schedule-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.35rem;
+    }
+
+    .schedule-tab {
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(5, 6, 8, 0.7);
+      font-size: 0.7rem;
+      cursor: pointer;
+      color: var(--muted);
+    }
+
+    .schedule-tab.active {
+      background: var(--accent-soft);
+      color: #ffffff;
+      border-color: rgba(255, 90, 31, 0.8);
+    }
+
+    .schedule-list {
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: rgba(5, 6, 8, 0.9);
+      max-height: 220px;
+      overflow-y: auto;
+    }
+
+    .schedule-row {
+      display: grid;
+      grid-template-columns: 0.9fr 1.2fr 0.7fr;
+      gap: 0.4rem;
+      padding: 0.4rem 0.6rem;
+      align-items: center;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .schedule-row:last-child {
+      border-bottom: none;
+    }
+
+    .schedule-time {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .schedule-class-name {
+      font-size: 0.8rem;
+    }
+
+    .schedule-coach {
+      font-size: 0.7rem;
+      text-align: right;
+      color: var(--muted);
+    }
+
+    /* PRICING */
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.1rem;
+    }
+
+    .pricing-card {
+      border-radius: var(--radius-xl);
+      background: rgba(9, 10, 16, 0.96);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 1.1rem;
+      box-shadow: 0 14px 34px rgba(0, 0, 0, 0.65);
+      font-size: 0.85rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .pricing-card.featured {
+      background: radial-gradient(circle at top, rgba(255, 90, 31, 0.3), rgba(5, 6, 8, 0.96));
+      border-color: rgba(255, 90, 31, 0.8);
+      transform: translateY(-3px);
+    }
+
+    .pricing-badge {
+      position: absolute;
+      top: 0.65rem;
+      right: 0.7rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.65rem;
+      background: rgba(5, 6, 8, 0.92);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+    }
+
+    .pricing-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.25rem;
+    }
+
+    .pricing-price {
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 0.2rem;
+    }
+
+    .pricing-period {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+
+    .pricing-list {
+      list-style: none;
+      margin-bottom: 0.8rem;
+      padding-left: 0;
+    }
+
+    .pricing-list li {
+      display: flex;
+      gap: 0.4rem;
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.25rem;
+    }
+
+    .pricing-dot {
+      font-size: 0.7rem;
+      color: var(--accent);
+      margin-top: 0.1rem;
+    }
+
+    .pricing-footer-note {
+      font-size: 0.7rem;
+      color: var(--muted);
+      margin-top: 0.4rem;
+    }
+
+    /* COACHES & REVIEWS */
+    .two-col {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 1.4rem;
+      align-items: start;
+    }
+
+    .coach-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.9rem;
+    }
+
+    .coach-card {
+      border-radius: var(--radius-lg);
+      background: rgba(10, 11, 18, 0.96);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 0.8rem;
+      font-size: 0.8rem;
+    }
+
+    .coach-photo {
+      border-radius: 16px;
+      overflow: hidden;
+      margin-bottom: 0.5rem;
+      background: radial-gradient(circle at top, #2a2e3e, #050608);
+      height: 120px;
+    }
+
+    .coach-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .coach-name {
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .coach-role {
+      font-size: 0.75rem;
+      color: var(--muted);
+      margin-bottom: 0.25rem;
+    }
+
+    .coach-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+      margin-top: 0.3rem;
+    }
+
+    .coach-badges span {
+      font-size: 0.65rem;
+      padding: 0.18rem 0.5rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      color: var(--muted);
+    }
+
+    .reviews-card {
+      border-radius: var(--radius-xl);
+      background: linear-gradient(145deg, rgba(14, 16, 26, 0.97), rgba(5, 6, 8, 0.97));
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 1rem;
+      font-size: 0.8rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .stars {
+      color: #ffb648;
+      font-size: 0.85rem;
+      margin-bottom: 0.15rem;
+    }
+
+    .reviews-header {
+      display: flex;
+      justify-content: space-between;
+      gap: 0.8rem;
+      align-items: center;
+      margin-bottom: 0.4rem;
+    }
+
+    .reviews-score {
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+
+    .review-item {
+      padding: 0.45rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+    }
+
+    .review-item:last-child {
+      border-bottom: none;
+    }
+
+    .review-name {
+      font-size: 0.78rem;
+      font-weight: 600;
+    }
+
+    .review-text {
+      font-size: 0.78rem;
+      color: var(--muted);
+    }
+
+    /* GALLERY */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: 1.6fr 1.1fr;
+      gap: 0.9rem;
+    }
+
+    .gallery-main {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: radial-gradient(circle at top, #2c3140, #050608);
+      height: 260px;
+    }
+
+    .gallery-main img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .gallery-side {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.9rem;
+    }
+
+    .gallery-thumb {
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      background: radial-gradient(circle at top, #262938, #050608);
+      height: 120px;
+    }
+
+    .gallery-thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* LOCATION & CONTACT */
+    .contact-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr);
+      gap: 1.4rem;
+      align-items: start;
+    }
+
+    .map-card {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      box-shadow: var(--shadow-soft);
+      background: #000;
+      min-height: 260px;
+    }
+
+    .map-card iframe {
+      border: none;
+      width: 100%;
+      height: 100%;
+      min-height: 260px;
+    }
+
+    .contact-card {
+      border-radius: var(--radius-xl);
+      background: rgba(10, 11, 18, 0.96);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      padding: 1rem;
+      font-size: 0.8rem;
+      box-shadow: var(--shadow-soft);
+    }
+
+    .contact-row {
+      margin-bottom: 0.6rem;
+    }
+
+    .contact-row strong {
+      display: block;
+      font-size: 0.85rem;
+      margin-bottom: 0.1rem;
+    }
+
+    .contact-row a {
+      color: var(--accent);
+      font-weight: 500;
+    }
+
+    .contact-badges {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+      margin-top: 0.4rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .contact-badges span {
+      font-size: 0.7rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      color: var(--muted);
+    }
+
+    .contact-form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.6rem;
+      margin-top: 0.4rem;
+    }
+
+    .contact-form .field-full {
+      grid-column: 1 / -1;
+    }
+
+    .field-label {
+      font-size: 0.7rem;
+      color: var(--muted);
+      margin-bottom: 0.15rem;
+    }
+
+    .field-input, .field-textarea {
+      width: 100%;
+      padding: 0.55rem 0.6rem;
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: rgba(5, 6, 8, 0.9);
+      color: #ffffff;
+      font-family: inherit;
+      font-size: 0.8rem;
+      outline: none;
+      transition: border 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;
+    }
+
+    .field-input:focus, .field-textarea:focus {
+      border-color: rgba(255, 90, 31, 0.9);
+      box-shadow: 0 0 0 1px rgba(255, 90, 31, 0.6);
+      background: rgba(5, 6, 8, 0.98);
+    }
+
+    .field-textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .contact-footnote {
+      margin-top: 0.35rem;
+      font-size: 0.72rem;
+      color: var(--muted);
+    }
+
+    /* FOOTER */
+    footer {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 1.5rem 0 2rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.9rem;
+    }
+
+    .footer-links a {
+      color: var(--muted);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 960px) {
+      .hero-inner {
+        grid-template-columns: minmax(0, 1.1fr);
+      }
+      .hero-right {
+        order: -1;
+      }
+      .features-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+      .classes-layout,
+      .two-col,
+      .contact-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .gallery-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .pricing-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-inner {
+        padding-top: 0.2rem;
+      }
+      .nav-links {
+        display: none;
+      }
+      .nav-toggle {
+        display: inline-flex;
+      }
+      .nav-links-mobile {
+        position: fixed;
+        inset: var(--nav-height) 0 auto 0;
+        background: rgba(5, 6, 8, 0.98);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        display: none;
+        z-index: 30;
+      }
+      .nav-links-mobile.open {
+        display: block;
+      }
+      .nav-links-mobile ul {
+        list-style: none;
+        padding: 0.6rem 1.25rem 0.8rem;
+      }
+      .nav-links-mobile li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .nav-links-mobile li:last-child {
+        border-bottom: none;
+      }
+      .nav-links-mobile a {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0.55rem 0;
+        font-size: 0.8rem;
+        letter-spacing: 0.13em;
+        text-transform: uppercase;
+        color: var(--muted);
+      }
+
+      .hero {
+        padding-top: calc(var(--nav-height) + 1rem);
+      }
+
+      .section-header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .features-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .class-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .pricing-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .coach-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .gallery-main {
+        height: 220px;
+      }
+
+      .contact-form {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero-title {
+        font-size: 2.1rem;
+      }
+      .hero-meta-row {
+        gap: 1rem;
+      }
+      .hero-floating-card {
+        right: 0;
+      }
+      .container {
+        padding: 0 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div class="page">
+  <!-- NAVBAR -->
+  <header class="nav" id="top-nav">
+    <div class="container nav-inner">
+      <div class="brand">
+        <div class="brand-logo">TS</div>
+        <div>
+          <div class="brand-text-main">TSRE • წრე</div>
+          <div class="brand-text-sub">GYM & FITNESS CLUB</div>
+        </div>
+      </div>
+
+      <nav class="nav-links">
+        <a href="#hero">Home</a>
+        <a href="#classes">Classes</a>
+        <a href="#pricing">Membership</a>
+        <a href="#coaches">Coaches</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-cta">
+        <div class="nav-cta-text">
+          <strong>+995 32 214 90 05</strong>
+          Mtskheta St 13, Vake
+        </div>
+        <button class="btn btn-primary" onclick="scrollToId('pricing')">
+          1-თვიანი ულიმიტო
+          <span class="btn-icon-circle">›</span>
+        </button>
+        <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+        </button>
+      </div>
+    </div>
+    <div class="nav-links-mobile" id="nav-links-mobile">
+      <ul>
+        <li><a href="#hero" onclick="closeMobileNav()">Home <span>01</span></a></li>
+        <li><a href="#classes" onclick="closeMobileNav()">Classes <span>02</span></a></li>
+        <li><a href="#pricing" onclick="closeMobileNav()">Membership <span>03</span></a></li>
+        <li><a href="#coaches" onclick="closeMobileNav()">Coaches <span>04</span></a></li>
+        <li><a href="#contact" onclick="closeMobileNav()">Contact <span>05</span></a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="hero">
+      <div class="container hero-inner">
+        <div class="hero-left">
+          <div class="hero-tag">
+            <span class="hero-tag-dot"></span>
+            TSRE • Vake, Tbilisi
+          </div>
+          <h1 class="hero-title">
+            Stronger <span>Every</span> Session.
+          </h1>
+          <p class="hero-badge-ka">
+            სივრცე, სადაც ენერგია მოძრაობს წრეზე. Judgment-free gym for real training – not posing.
+          </p>
+          <p class="hero-subtitle">
+            Modern equipment, boxing & HIIT studio, spinning, yoga and more – in the heart of
+            <strong>Vake</strong>, on <strong>Mtskheta Street 13</strong>.
+          </p>
+
+          <div class="hero-cta-row">
+            <button class="btn btn-primary" onclick="scrollToId('contact')">
+              Book First Visit
+              <span class="btn-icon-circle">+</span>
+            </button>
+            <button class="btn btn-outline" onclick="scrollToId('classes')">
+              View Classes
+            </button>
+          </div>
+
+          <div class="hero-meta-row">
+            <div class="hero-meta-item">
+              <strong>08:00 – 00:00</strong>
+              Mon–Sat • Sun 09:00–23:00
+            </div>
+            <div class="hero-meta-item">
+              <strong>
+                <span class="hero-meta-dot-row">
+                  <span class="hero-meta-dot"></span>
+                  <span class="hero-meta-dot"></span>
+                </span>
+                Active Community
+              </strong>
+              Recycle your energy with people who train seriously.
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card-main">
+            <div>
+              <div class="hero-photo">
+                <!-- Replace src with real TSRE hero photo -->
+                <img src="images/tsre-hero.jpg" alt="TSRE gym interior in Vake, Tbilisi">
+                <div class="hero-photo-label">
+                  Vake • Full Gym + Classes
+                </div>
+              </div>
+            </div>
+            <div class="hero-stats-row">
+              <div class="hero-stat">
+                <strong>Full Gym</strong>
+                Plate-loaded machines, free weights, treadmills – everything you need for strength & conditioning.
+              </div>
+              <div class="hero-stat">
+                <strong>Group Classes</strong>
+                Boxing, HIIT, spinning, yoga, abs & glutes sessions included in memberships.
+              </div>
+            </div>
+            <div class="hero-floating-card">
+              <div class="hero-floating-badge">
+                <span class="hero-floating-badge-dot"></span>
+                1-Month Unlimited
+              </div>
+              <strong>Train every day.</strong>
+              <div>Access gym + selected group classes with one pass. Ask at the front desk about current discounts.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHY TSRE -->
+    <section id="why">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">Why TSRE</div>
+            <h2 class="section-title">Built For Real Training</h2>
+          </div>
+          <div class="section-sub">
+            No fake luxury. No chaos. TSRE keeps the focus on
+            <strong>strength, conditioning and community</strong> – with enough space and equipment to actually train.
+          </div>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon">🏋️</div>
+            <h3 class="feature-title">Serious Equipment</h3>
+            <p class="feature-text">
+              Full free-weight area, plate-loaded machines, treadmills and bikes. Enough racks and benches so you don’t waste half your workout waiting.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">🔥</div>
+            <h3 class="feature-title">Classes That Actually Hurt</h3>
+            <p class="feature-text">
+              Boxing, HIIT, spinning, abs & glutes, yoga, mix-aerobics – structured sessions that push you, not “easy cardio” with music.
+            </p>
+          </article>
+          <article class="feature-card">
+            <div class="feature-icon">⭕</div>
+            <h3 class="feature-title">Judgment-Free Circle</h3>
+            <p class="feature-text">
+              TSRE literally means “circle” – space where energy moves in circles. Beginners and advanced lifters train side by side without ego.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLASSES & SCHEDULE -->
+    <section id="classes">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">Classes</div>
+            <h2 class="section-title">Boxing • HIIT • Spinning • Yoga</h2>
+          </div>
+          <div class="section-sub">
+            Mix classic gym work with group sessions. Below is a sample structure – the exact timetable can be updated by TSRE staff anytime.
+          </div>
+        </div>
+
+        <div class="classes-layout">
+          <div>
+            <div class="class-grid">
+              <article class="class-card">
+                <div class="class-tag">Combat</div>
+                <div class="class-name">Boxing</div>
+                <div class="class-level">Beginner & Intermediate</div>
+                <p class="class-text">
+                  Technical work, bag rounds and conditioning. Great if you want to actually learn how to hit, not just shadowbox.
+                </p>
+                <div class="class-meta-row">
+                  <span><strong>60</strong> min</span>
+                  <span>Evenings • Booking same-day</span>
+                </div>
+              </article>
+
+              <article class="class-card">
+                <div class="class-tag">Conditioning</div>
+                <div class="class-name">HIIT</div>
+                <div class="class-level">All Levels</div>
+                <p class="class-text">
+                  Short brutal intervals using bodyweight, kettlebells and machines. Perfect for fat loss and cardio.
+                </p>
+                <div class="class-meta-row">
+                  <span><strong>40</strong> min</span>
+                  <span>Midday / Evening</span>
+                </div>
+              </article>
+
+              <article class="class-card">
+                <div class="class-tag">Strength & Shape</div>
+                <div class="class-name">Abs & Glutes</div>
+                <div class="class-level">All Levels</div>
+                <p class="class-text">
+                  Focus work for core and lower body. Add this on top of your lifting for visible results.
+                </p>
+                <div class="class-meta-row">
+                  <span><strong>45</strong> min</span>
+                  <span>3–4x per week</span>
+                </div>
+              </article>
+
+              <article class="class-card">
+                <div class="class-tag">Mind • Body</div>
+                <div class="class-name">Yoga / Mix-Aerobics</div>
+                <div class="class-level">All Levels</div>
+                <p class="class-text">
+                  Mobility, coordination and active recovery. Keeps joints healthy so you can keep lifting heavy.
+                </p>
+                <div class="class-meta-row">
+                  <span><strong>60</strong> min</span>
+                  <span>Morning / Weekend</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <aside class="schedule-card">
+            <div class="schedule-header">
+              <div>
+                <div class="section-eyebrow">Timetable</div>
+                <h3 class="section-title" style="font-size: 1rem;">Sample Weekly Schedule</h3>
+              </div>
+            </div>
+            <div class="schedule-tabs">
+              <button class="schedule-tab active" data-day="mon">Mon</button>
+              <button class="schedule-tab" data-day="tue">Tue</button>
+              <button class="schedule-tab" data-day="wed">Wed</button>
+              <button class="schedule-tab" data-day="thu">Thu</button>
+              <button class="schedule-tab" data-day="fri">Fri</button>
+              <button class="schedule-tab" data-day="sat">Sat</button>
+              <button class="schedule-tab" data-day="sun">Sun</button>
+            </div>
+            <div class="schedule-list" id="schedule-list">
+              <!-- Filled by JS -->
+            </div>
+            <p style="margin-top:0.5rem; font-size:0.7rem; color:var(--muted);">
+              Exact times can change. Call or message TSRE on Instagram for today’s schedule and to book a spot.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">Membership</div>
+            <h2 class="section-title">Simple, Clear Options</h2>
+          </div>
+          <div class="section-sub">
+            TSRE often runs promos for 1-month unlimited passes. Below is a clean structure you can show the owner – prices are placeholders in GEL.
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <div class="pricing-name">Morning Access</div>
+            <div class="pricing-price">120 ₾</div>
+            <div class="pricing-period">per month • 08:00–16:00</div>
+            <ul class="pricing-list">
+              <li><span class="pricing-dot">•</span> Full gym access in off-peak hours</li>
+              <li><span class="pricing-dot">•</span> Cardio + weights area</li>
+              <li><span class="pricing-dot">•</span> Locker rooms & showers</li>
+            </ul>
+            <button class="btn btn-outline" onclick="scrollToId('contact')">Book Morning Plan</button>
+          </article>
+
+          <article class="pricing-card featured">
+            <div class="pricing-badge">Most Popular</div>
+            <div class="pricing-name">1-Month Unlimited</div>
+            <div class="pricing-price">170 ₾</div>
+            <div class="pricing-period">per month • Full Day</div>
+            <ul class="pricing-list">
+              <li><span class="pricing-dot">•</span> Unlimited gym access</li>
+              <li><span class="pricing-dot">•</span> Selected group classes (boxing, HIIT, abs & glutes, spinning, yoga)</li>
+              <li><span class="pricing-dot">•</span> Flexible entry all week</li>
+            </ul>
+            <button class="btn btn-primary" onclick="scrollToId('contact')">
+              Join TSRE Today
+              <span class="btn-icon-circle">›</span>
+            </button>
+            <div class="pricing-footer-note">
+              Real price & promos can be updated – this is the main plan you push.
+            </div>
+          </article>
+
+          <article class="pricing-card">
+            <div class="pricing-name">Personal Training</div>
+            <div class="pricing-price">from 60 ₾</div>
+            <div class="pricing-period">per session</div>
+            <ul class="pricing-list">
+              <li><span class="pricing-dot">•</span> 1:1 session with TSRE coach</li>
+              <li><span class="pricing-dot">•</span> Technique, programming, goal setting</li>
+              <li><span class="pricing-dot">•</span> Can be combined with membership</li>
+            </ul>
+            <button class="btn btn-outline" onclick="scrollToId('contact')">
+              Ask About PT
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COACHES & REVIEWS -->
+    <section id="coaches">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">Team & Community</div>
+            <h2 class="section-title">Coaches & Member Feedback</h2>
+          </div>
+          <div class="section-sub">
+            Fill these cards with real coach photos and short bios. On the right – summary of reviews from Google / Madloba / social.
+          </div>
+        </div>
+
+        <div class="two-col">
+          <div>
+            <div class="coach-grid">
+              <article class="coach-card">
+                <div class="coach-photo">
+                  <!-- Replace with real coach photo -->
+                  <img src="images/coach-boxing.jpg" alt="Boxing coach at TSRE">
+                </div>
+                <div class="coach-name">Giorgi • Boxing</div>
+                <div class="coach-role">Head Boxing Coach</div>
+                <p class="coach-text">
+                  Focus on fundamentals, defense and conditioning. Great for beginners who want real technique, not random pad work.
+                </p>
+                <div class="coach-badges">
+                  <span>Amateur fights</span>
+                  <span>All levels</span>
+                </div>
+              </article>
+
+              <article class="coach-card">
+                <div class="coach-photo">
+                  <img src="images/coach-hiit.jpg" alt="HIIT coach at TSRE">
+                </div>
+                <div class="coach-name">Nino • HIIT & Strength</div>
+                <div class="coach-role">HIIT / Functional</div>
+                <p class="coach-text">
+                  Builds tough, efficient sessions using bodyweight & machines. Perfect if you want to drop fat and keep muscle.
+                </p>
+                <div class="coach-badges">
+                  <span>HIIT</span>
+                  <span>Weight loss</span>
+                </div>
+              </article>
+
+              <article class="coach-card">
+                <div class="coach-photo">
+                  <img src="images/coach-yoga.jpg" alt="Yoga coach at TSRE">
+                </div>
+                <div class="coach-name">Ana • Yoga</div>
+                <div class="coach-role">Yoga / Mobility</div>
+                <p class="coach-text">
+                  Helps lifters open hips, shoulders and spine so you can squat, press and pull pain-free.
+                </p>
+                <div class="coach-badges">
+                  <span>Mobility</span>
+                  <span>Recovery</span>
+                </div>
+              </article>
+
+              <article class="coach-card">
+                <div class="coach-photo">
+                  <img src="images/coach-pt.jpg" alt="Personal trainer at TSRE">
+                </div>
+                <div class="coach-name">Levan • PT</div>
+                <div class="coach-role">Personal Trainer</div>
+                <p class="coach-text">
+                  Custom programs for strength, aesthetics or performance. Track numbers, not just sweat.
+                </p>
+                <div class="coach-badges">
+                  <span>Strength</span>
+                  <span>Beginners welcome</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <aside class="reviews-card">
+            <div class="reviews-header">
+              <div>
+                <div class="section-eyebrow">Reviews</div>
+                <div class="reviews-score">4.4 ★ / 5.0</div>
+                <div style="font-size:0.75rem; color:var(--muted);">
+                  Based on Google & local platforms
+                </div>
+              </div>
+              <div>
+                <div class="stars">★★★★★</div>
+                <div style="font-size:0.72rem;">Gym • Fitness Club • Vake</div>
+              </div>
+            </div>
+
+            <div class="review-item">
+              <div class="review-name">“Excellent gym”</div>
+              <p class="review-text">
+                “Excellent gym. A wide range of equipment. Friendly staff. Trainers are available if needed.”
+              </p>
+            </div>
+            <div class="review-item">
+              <div class="review-name">“Great community”</div>
+              <p class="review-text">
+                “Active community where you can recycle your energy in a judgment-free zone.”
+              </p>
+            </div>
+            <div class="review-item">
+              <div class="review-name">“Best in Vake”</div>
+              <p class="review-text">
+                “One of the best gyms in Vake – big space, a lot of machines, classes and good atmosphere.”
+              </p>
+            </div>
+
+            <p style="margin-top:0.5rem; font-size:0.7rem; color:var(--muted);">
+              You can replace these quotes with real Google / Facebook / Madloba reviews.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">Inside TSRE</div>
+            <h2 class="section-title">Gym, Studios & Cardio Zone</h2>
+          </div>
+          <div class="section-sub">
+            Use high-quality photos from Instagram: full gym, group studio, spinning room, treadmills with TSRE wall art, entrance with logo.
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-main">
+            <img src="images/tsre-main-gym.jpg" alt="Main TSRE gym area with machines and free weights">
+          </div>
+          <div class="gallery-side">
+            <div class="gallery-thumb">
+              <img src="images/tsre-studio.jpg" alt="TSRE group studio for HIIT and yoga">
+            </div>
+            <div class="gallery-thumb">
+              <img src="images/tsre-spinning.jpg" alt="TSRE spinning room with bikes">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION & CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">Location & Contact</div>
+            <h2 class="section-title">In The Heart Of Vake</h2>
+          </div>
+          <div class="section-sub">
+            TSRE is on Mtskheta Street 13 – walking distance from Round Garden and main Vake streets, easy to reach from Rustaveli and Saburtalo.
+          </div>
+        </div>
+
+        <div class="contact-layout">
+          <div class="map-card">
+            <!-- Simple Google Maps embed based on the link you gave -->
+            <iframe
+              src="https://www.google.com/maps?q=Tsre,+Mtskheta+St+13,+Tbilisi&output=embed"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <aside class="contact-card">
+            <div class="contact-row">
+              <strong>Adress:</strong>
+              Mtskheta St 13, Vake, Tbilisi, Georgia
+            </div>
+            <div class="contact-row">
+              <strong>Phone:</strong>
+              <a href="tel:+995322149005">+995 32 214 90 05</a>
+            </div>
+            <div class="contact-row">
+              <strong>Instagram:</strong>
+              <a href="https://www.instagram.com/tsre.ge" target="_blank">@tsre.ge</a>
+            </div>
+            <div class="contact-row">
+              <strong>Working Hours:</strong>
+              Mon–Fri 08:00–00:00 • Sat 08:00–23:00 • Sun 09:00–23:00
+            </div>
+
+            <div class="contact-badges">
+              <span>ქართული</span>
+              <span>English</span>
+              <span>Русский</span>
+            </div>
+
+            <form class="contact-form">
+              <div>
+                <div class="field-label">Name</div>
+                <input class="field-input" type="text" name="name" placeholder="Your name" />
+              </div>
+              <div>
+                <div class="field-label">Phone / WhatsApp</div>
+                <input class="field-input" type="tel" name="phone" placeholder="+995 ..." />
+              </div>
+              <div class="field-full">
+                <div class="field-label">What are you interested in?</div>
+                <textarea class="field-textarea" name="message" placeholder="Example: 1-month unlimited + boxing classes in the evening"></textarea>
+              </div>
+              <div class="field-full">
+                <button type="button" class="btn btn-primary" style="width:100%;">
+                  Send Request
+                </button>
+              </div>
+            </form>
+            <p class="contact-footnote">
+              Form can be connected later to TSRE’s email, CRM or WhatsApp. For now, you can replace the button with direct links to call / IG DM.
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-inner">
+      <div>© <span id="year"></span> TSRE • წრე – Mtskheta St 13, Vake, Tbilisi.</div>
+      <div class="footer-links">
+        <a href="#hero">Home</a>
+        <a href="#pricing">Membership</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+  // Sticky nav on scroll
+  const nav = document.getElementById('top-nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 20) {
+      nav.classList.add('scrolled');
+    } else {
+      nav.classList.remove('scrolled');
+    }
+  });
+
+  // Smooth scroll helper
+  function scrollToId(id) {
+    const el = document.getElementById(id);
+    if (!el) return;
+    const yOffset = -70;
+    const y = el.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+
+  // Mobile nav
+  const toggleBtn = document.getElementById('nav-toggle');
+  const mobileNav = document.getElementById('nav-links-mobile');
+
+  function closeMobileNav() {
+    mobileNav.classList.remove('open');
+    toggleBtn.classList.remove('open');
+  }
+
+  toggleBtn.addEventListener('click', () => {
+    mobileNav.classList.toggle('open');
+    toggleBtn.classList.toggle('open');
+  });
+
+  // Fake schedule data (you or the owner can change times/names later)
+  const schedules = {
+    mon: [
+      { time: '08:30', name: 'Yoga', coach: 'Ana' },
+      { time: '12:00', name: 'HIIT', coach: 'Nino' },
+      { time: '18:00', name: 'Boxing', coach: 'Giorgi' },
+      { time: '19:15', name: 'Spinning', coach: 'Staff' },
+      { time: '20:00', name: 'Abs & Glutes', coach: 'Nino' }
+    ],
+    tue: [
+      { time: '08:30', name: 'Mix-Aerobics', coach: 'Staff' },
+      { time: '12:30', name: 'HIIT', coach: 'Nino' },
+      { time: '18:30', name: 'Boxing', coach: 'Giorgi' },
+      { time: '19:30', name: 'Yoga', coach: 'Ana' }
+    ],
+    wed: [
+      { time: '08:30', name: 'Yoga', coach: 'Ana' },
+      { time: '12:00', name: 'HIIT', coach: 'Nino' },
+      { time: '18:00', name: 'Boxing', coach: 'Giorgi' },
+      { time: '19:15', name: 'Spinning', coach: 'Staff' }
+    ],
+    thu: [
+      { time: '08:30', name: 'Mix-Aerobics', coach: 'Staff' },
+      { time: '12:30', name: 'HIIT', coach: 'Nino' },
+      { time: '18:30', name: 'Boxing', coach: 'Giorgi' },
+      { time: '19:30', name: 'Abs & Glutes', coach: 'Nino' }
+    ],
+    fri: [
+      { time: '08:30', name: 'Yoga', coach: 'Ana' },
+      { time: '12:00', name: 'HIIT', coach: 'Nino' },
+      { time: '18:00', name: 'Boxing', coach: 'Giorgi' },
+      { time: '19:15', name: 'Spinning', coach: 'Staff' }
+    ],
+    sat: [
+      { time: '10:00', name: 'Boxing', coach: 'Giorgi' },
+      { time: '11:15', name: 'HIIT', coach: 'Nino' },
+      { time: '12:30', name: 'Yoga', coach: 'Ana' }
+    ],
+    sun: [
+      { time: '11:00', name: 'Yoga', coach: 'Ana' },
+      { time: '12:15', name: 'Mix-Aerobics', coach: 'Staff' }
+    ]
+  };
+
+  const scheduleList = document.getElementById('schedule-list');
+  const scheduleTabs = document.querySelectorAll('.schedule-tab');
+
+  function renderSchedule(day) {
+    const items = schedules[day] || [];
+    scheduleList.innerHTML = '';
+    items.forEach(item => {
+      const row = document.createElement('div');
+      row.className = 'schedule-row';
+      row.innerHTML = `
+        <div class="schedule-time">${item.time}</div>
+        <div class="schedule-class-name">${item.name}</div>
+        <div class="schedule-coach">${item.coach}</div>
+      `;
+      scheduleList.appendChild(row);
+    });
+  }
+
+  scheduleTabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      scheduleTabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      renderSchedule(tab.dataset.day);
+    });
+  });
+
+  // Initial render
+  renderSchedule('mon');
+
+  // Footer year
+  document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
