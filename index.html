@@ -177,6 +177,21 @@
       min-width: 0;
     }
 
+    .nav-cta-text {
+      font-size: 0.72rem;
+      line-height: 1.3;
+      color: var(--muted);
+      text-align: right;
+      max-width: 260px;
+      white-space: normal;
+    }
+
+    .nav-cta-text strong {
+      display: block;
+      font-size: 0.8rem;
+      color: #ffffff;
+    }
+
     .btn {
       border: none;
       border-radius: 999px;
@@ -1068,6 +1083,13 @@
       .nav-links { display: none; }
       .nav-toggle { display: inline-flex; }
 
+      .nav-cta-text {
+        font-size: 0.68rem;
+        max-width: 120px;
+      }
+
+      .nav-cta-text strong { font-size: 0.78rem; }
+
       .nav-cta .btn {
         padding: 0.42rem 0.8rem;
         font-size: 0.74rem;
@@ -1119,6 +1141,43 @@
       .gallery-main { height: 220px; }
       .contact-form { grid-template-columns: minmax(0, 1fr); }
     }
+
+    /* Desktop / laptop tweaks */ @media (min-width: 769px) {   /* make the bar a bit shorter on PC */   :root {     --nav-height: 64px;   }    /* phone + address line smaller and tighter */   .nav-cta-text {     font-size: 0.7rem;     line-height: 1.2;     max-width: 170px;  /* keeps it from stretching across the whole bar */   }    .nav-cta-text strong {     font-size: 0.8rem; /* phone number slightly smaller */   }    /* shrink the “1-თვიანი ულიმიტო / 1-Month Unlimited” button */   .nav-cta .btn {     padding: 0.38rem 1.1rem;  /* less height, less width */     font-size: 0.76rem;   } } {   :root {     --nav-height: 60px;   }    .container {     padding: 0 1rem;   }    /* BRAND / NAV SHRINK */   .brand-logo {     width: 34px;     height: 34px;     font-size: 0.7rem;   }    .brand-text-main {     font-size: 0.85rem;     letter-spacing: 0.08em;   }    /* NAV LAYOUT */   .nav-inner {     gap: 0.4rem;   }    .nav-cta {     gap: 0.35rem;   }    /* ❗ HIDE PHONE + ADDRESS FROM TOP BAR ON TINY SCREENS */   .nav-cta-text {     display: none;   }    /* KA / EN pill smaller */   .lang-toggle {     transform: scale(0.9);   }    .lang-btn {     padding: 0.12rem 0.5rem;     font-size: 0.6rem;     letter-spacing: 0.14em;   }    /* Membership button smaller & allowed to wrap */   .nav-cta .btn {     padding: 0.26rem 0.60rem;     font-size: 0.58rem;     max-width: 120px;     white-space: normal;     text-align: center;     letter-spacing: 0.10em;   }    .btn-icon-circle {     width: 13px;     height: 13px;     font-size: 0.52rem;   }    /* HERO TEXT */   .hero-title {     font-size: 1.85rem;     line-height: 1.1;   }    .hero-subtitle {     font-size: 0.84rem;   }    .hero-badge-ka {     font-size: 0.8rem;   }    .hero-meta-row {     flex-direction: column;     gap: 0.7rem;   }    .section-title {     font-size: 1.25rem;   }    .section-sub {     font-size: 0.8rem;   }    .hero-floating {     right: 0;   } } {   :root {     --nav-height: 60px;   }    .container {     padding: 0 1rem;   }    /* BRAND / NAV SHRINK */   .brand-logo {     width: 34px;     height: 34px;     font-size: 0.7rem;   }    .brand-text-main {     font-size: 0.85rem;     letter-spacing: 0.08em;   }    /* NAV LAYOUT */   .nav-inner {     gap: 0.4rem;   }    .nav-cta {     gap: 0.35rem;   }    /* ❗ HIDE PHONE + ADDRESS FROM TOP BAR ON TINY SCREENS */   .nav-cta-text {     display: none;   }    /* KA / EN pill smaller */   .lang-toggle {     transform: scale(0.9);   }    .lang-btn {     padding: 0.12rem 0.5rem;     font-size: 0.6rem;     letter-spacing: 0.14em;   }    /* Membership button smaller & allowed to wrap */   .nav-cta .btn {     padding: 0.26rem 0.60rem;     font-size: 0.58rem;     max-width: 120px;     white-space: normal;     text-align: center;     letter-spacing: 0.10em;   }    .btn-icon-circle {     width: 13px;     height: 13px;     font-size: 0.52rem;   }    /* HERO TEXT */   .hero-title {     font-size: 1.85rem;     line-height: 1.1;   }    .hero-subtitle {     font-size: 0.84rem;   }    .hero-badge-ka {     font-size: 0.8rem;   }    .hero-meta-row {     flex-direction: column;     gap: 0.7rem;   }    .section-title {     font-size: 1.25rem;   }    .section-sub {     font-size: 0.8rem;   }    .hero-floating {     right: 0;   } } {   :root {     --nav-height: 60px;   }    .container {     padding: 0 1rem;   }    /* BRAND / NAV SHRINK */   .brand-logo {     width: 34px;     height: 34px;     font-size: 0.7rem;   }    .brand-text-main {     font-size: 0.85rem;     letter-spacing: 0.08em;   }    /* NAV LAYOUT */   .nav-inner {     gap: 0.4rem;   }    .nav-cta {     gap: 0.35rem;   }    /* ❗ HIDE PHONE + ADDRESS FROM TOP BAR ON TINY SCREENS */   .nav-cta-text {     display: none;   }    /* KA / EN pill smaller */   .lang-toggle {     transform: scale(0.9);   }    .lang-btn {     padding: 0.12rem 0.5rem;     font-size: 0.6rem;     letter-spacing: 0.14em;   }    /* Membership button smaller & allowed to wrap */   .nav-cta .btn {     padding: 0.26rem 0.60rem;     font-size: 0.58rem;     max-width: 120px;     white-space: normal;     text-align: center;     letter-spacing: 0.10em;   }    .btn-icon-circle {     width: 13px;     height: 13px;     font-size: 0.52rem;   }    /* HERO TEXT */   .hero-title {     font-size: 1.85rem;     line-height: 1.1;   }    .hero-subtitle {     font-size: 0.84rem;   }    .hero-badge-ka {     font-size: 0.8rem;   }    .hero-meta-row {     flex-direction: column;     gap: 0.7rem;   }    .section-title {     font-size: 1.25rem;   }    .section-sub {     font-size: 0.8rem;   }    .hero-floating {     right: 0;   } } {   :root {     --nav-height: 60px;   }    .container {     padding: 0 1rem;   }    /* BRAND / NAV SHRINK */   .brand-logo {     width: 34px;     height: 34px;     font-size: 0.7rem;   }    .brand-text-main {     font-size: 0.85rem;     letter-spacing: 0.08em;   }    /* NAV LAYOUT */   .nav-inner {     gap: 0.4rem;   }    .nav-cta {     gap: 0.35rem;   }    /* ❗ HIDE PHONE + ADDRESS FROM TOP BAR ON TINY SCREENS */   .nav-cta-text {     display: none;   }    /* KA / EN pill smaller */   .lang-toggle {     transform: scale(0.9);   }    .lang-btn {     padding: 0.12rem 0.5rem;     font-size: 0.6rem;     letter-spacing: 0.14em;   }    /* Membership button smaller & allowed to wrap */   .nav-cta .btn {     padding: 0.26rem 0.60rem;     font-size: 0.58rem;     max-width: 120px;     white-space: normal;     text-align: center;     letter-spacing: 0.10em;   }    .btn-icon-circle {     width: 13px;     height: 13px;     font-size: 0.52rem;   }    /* HERO TEXT */   .hero-title {     font-size: 1.85rem;     line-height: 1.1;   }    .hero-subtitle {     font-size: 0.84rem;   }    .hero-badge-ka {     font-size: 0.8rem;   }    .hero-meta-row {     flex-direction: column;     gap: 0.7rem;   }    .section-title {     font-size: 1.25rem;   }    .section-sub {     font-size: 0.8rem;   }    .hero-floating {     right: 0;   } } {   :root {     --nav-height: 60px;   }    .container {     padding: 0 1rem;   }    /* BRAND / NAV SHRINK */   .brand-logo {     width: 34px;     height: 34px;     font-size: 0.7rem;   }    .brand-text-main {     font-size: 0.85rem;     letter-spacing: 0.08em;   }    /* NAV LAYOUT */   .nav-inner {     gap: 0.4rem;   }    .nav-cta {     gap: 0.35rem;   }    /* ❗ HIDE PHONE + ADDRESS FROM TOP BAR ON TINY SCREENS */   .nav-cta-text {     display: none;   }    /* KA / EN pill smaller */   .lang-toggle {     transform: scale(0.9);   }    .lang-btn {     padding: 0.12rem 0.5rem;     font-size: 0.6rem;     letter-spacing: 0.14em;   }    /* Membership button smaller & allowed to wrap */   .nav-cta .btn {     padding: 0.26rem 0.60rem;     font-size: 0.58rem;     max-width: 120px;     white-space: normal;     text-align: center;     letter-spacing: 0.10em;   }    .btn-icon-circle {     width: 13px;     height: 13px;     font-size: 0.52rem;   }    /* HERO TEXT */   .hero-title {     font-size: 1.85rem;     line-height: 1.1;   }    .hero-subtitle {     font-size: 0.84rem;   }    .hero-badge-ka {     font-size: 0.8rem;   }    .hero-meta-row {     flex-direction: column;     gap: 0.7rem;   }    .section-title {     font-size: 1.25rem;   }    .section-sub {     font-size: 0.8rem;   }    .hero-floating {     right: 0;   } } {   :root {     --nav-height: 60px;   }    .container {     padding: 0 1rem;   }    /* BRAND / NAV SHRINK */   .brand-logo {     width: 34px;     height: 34px;     font-size: 0.7rem;   }    .brand-text-main {     font-size: 0.85rem;     letter-spacing: 0.08em;   }    /* NAV LAYOUT */   .nav-inner {     gap: 0.4rem;   }    .nav-cta {     gap: 0.35rem;   }    /* ❗ HIDE PHONE + ADDRESS FROM TOP BAR ON TINY SCREENS */   .nav-cta-text {     display: none;   }    /* KA / EN pill smaller */   .lang-toggle {     transform: scale(0.9);   }    .lang-btn {     padding: 0.12rem 0.5rem;     font-size: 0.6rem;     letter-spacing: 0.14em;   }    /* Membership button smaller & allowed to wrap */   .nav-cta .btn {     padding: 0.26rem 0.60rem;     font-size: 0.58rem;     max-width: 120px;     white-space: normal;     text-align: center;     letter-spacing: 0.10em;   }    .btn-icon-circle {     width: 13px;     height: 13px;     font-size: 0.52rem;   }    /* HERO TEXT */   .hero-title {     font-size: 1.85rem;     line-height: 1.1;   }    .hero-subtitle {     font-size: 0.84rem;   }    .hero-badge-ka {     font-size: 0.8rem;   }    .hero-meta-row {     flex-direction: column;     gap: 0.7rem;   }    .section-title {     font-size: 1.25rem;   }    .section-sub {     font-size: 0.8rem;   }    .hero-floating {     right: 0;   } } {   :root {     --nav-height: 60px;   }    .container {     padding: 0 1rem;   }    /* BRAND / NAV SHRINK */   .brand-logo {     width: 34px;     height: 34px;     font-size: 0.7rem;   }    .brand-text-main {     font-size: 0.85rem;     letter-spacing: 0.08em;   }    /* NAV LAYOUT */   .nav-inner {     gap: 0.4rem;   }    .nav-cta {     gap: 0.35rem;   }    /* ❗ HIDE PHONE + ADDRESS FROM TOP BAR ON TINY SCREENS */   .nav-cta-text {     display: none;   }    /* KA / EN pill smaller */   .lang-toggle {     transform: scale(0.9);   }    .lang-btn {     padding: 0.12rem 0.5rem;     font-size: 0.6rem;     letter-spacing: 0.14em;   }    /* Membership button smaller & allowed to wrap */   .nav-cta .btn {     padding: 0.26rem 0.60rem;     font-size: 0.58rem;     max-width: 120px;     white-space: normal;     text-align: center;     letter-spacing: 0.10em;   }    .btn-icon-circle {     width: 13px;     height: 13px;     font-size: 0.52rem;   }    /* HERO TEXT */   .hero-title {     font-size: 1.85rem;     line-height: 1.1;   }    .hero-subtitle {     font-size: 0.84rem;   }    .hero-badge-ka {     font-size: 0.8rem;   }    .hero-meta-row {     flex-direction: column;     gap: 0.7rem;   }    .section-title {     font-size: 1.25rem;   }    .section-sub {     font-size: 0.8rem;   }    .hero-floating {     right: 0;   } } {   :root {     --nav-height: 60px;   }    .container {     padding: 0 1rem;   }    /* BRAND / NAV SHRINK */   .brand-logo {     width: 34px;     height: 34px;     font-size: 0.7rem;   }    .brand-text-main {     font-size: 0.85rem;     letter-spacing: 0.08em;   }    /* NAV LAYOUT */   .nav-inner {     gap: 0.4rem;   }    .nav-cta {     gap: 0.35rem;   }    /* ❗ HIDE PHONE + ADDRESS FROM TOP BAR ON TINY SCREENS */   .nav-cta-text {     display: none;   }    /* KA / EN pill smaller */   .lang-toggle {     transform: scale(0.9);   }    .lang-btn {     padding: 0.12rem 0.5rem;     font-size: 0.6rem;     letter-spacing: 0.14em;   }    /* Membership button smaller & allowed to wrap */   .nav-cta .btn {     padding: 0.26rem 0.60rem;     font-size: 0.58rem;     max-width: 120px;     white-space: normal;     text-align: center;     letter-spacing: 0.10em;   }    .btn-icon-circle {     width: 13px;     height: 13px;     font-size: 0.52rem;   }    /* HERO TEXT */   .hero-title {     font-size: 1.85rem;     line-height: 1.1;   }    .hero-subtitle {     font-size: 0.84rem;   }    .hero-badge-ka {     font-size: 0.8rem;   }    .hero-meta-row {     flex-direction: column;     gap: 0.7rem;   }    .section-title {     font-size: 1.25rem;   }    .section-sub {     font-size: 0.8rem;   }    .hero-floating {     right: 0;   } } {   /* slightly lower nav on tiny screens */   :root { --nav-height: 58px; }    .container { padding: 0 1rem; }    .hero-title {     font-size: 1.85rem;     line-height: 1.1;   }    .hero-subtitle { font-size: 0.84rem; }   .hero-badge-ka { font-size: 0.8rem; }    .hero-meta-row {     flex-direction: column;     gap: 0.7rem;   }    /* TOP BAR: make it compact and less goofy */   .nav-inner {     gap: 0.4rem;   }    .nav-cta {     gap: 0.25rem;   }    /* hide address text in the top bar on very small screens */   .nav-cta-text span {     display: none;     /* hides “Mtskheta St 13, Vake” / Georgian version */   }    .nav-cta-text {     max-width: 72px;   /* very narrow */     font-size: 0.56rem;     line-height: 1.1;   }    .nav-cta-text strong {     font-size: 0.64rem;   /* phone number smaller */   }    .nav-cta .btn {     padding: 0.26rem 0.50rem;     font-size: 0.56rem;   /* smaller text “1-month unlimited” */     letter-spacing: 0.10em;     max-width: 110px;     /* prevents it from stretching */     white-space: normal;  /* allow 2 lines instead of huge one-liner */     text-align: center;   }    .btn-icon-circle {     width: 13px;     height: 13px;     font-size: 0.52rem;   }    .section-title { font-size: 1.25rem; }   .section-sub { font-size: 0.8rem; }   .hero-floating { right: 0; } } {
+      .container { padding: 0 1rem; }
+
+      .hero-title {
+        font-size: 1.85rem;
+        line-height: 1.1;
+      }
+
+      .hero-subtitle { font-size: 0.84rem; }
+      .hero-badge-ka { font-size: 0.8rem; }
+
+      .hero-meta-row {
+        flex-direction: column;
+        gap: 0.7rem;
+      }
+
+      .nav-cta-text {
+        max-width: 100px;
+        font-size: 0.66rem;
+      }
+
+      .nav-cta .btn {
+        padding: 0.4rem 0.7rem;
+        font-size: 0.7rem;
+      }
+
+      .btn-icon-circle {
+        width: 15px;
+        height: 15px;
+        font-size: 0.58rem;
+      }
+
+      .section-title { font-size: 1.25rem; }
+      .section-sub { font-size: 0.8rem; }
+      .hero-floating { right: 0; }
+    }
   </style>
 </head>
 <body>
@@ -1169,7 +1228,12 @@
           <button class="lang-btn" data-lang="en">EN</button>
         </div>
 
-        <!-- phone/address removed from top bar -->
+        <div class="nav-cta-text">
+          <strong>+995 32 214 90 05</strong>
+          <span class="lang-ka">მცხეთის ქუჩა 13, ვაკე</span>
+          <span class="lang-en">Mtskheta St 13, Vake</span>
+        </div>
+
         <button class="btn btn-primary" onclick="scrollToId('pricing')">
           <span class="lang-ka">1-თვიანი ულიმიტო</span>
           <span class="lang-en">1-Month Unlimited</span>
@@ -1241,26 +1305,31 @@
             </button>
           </div>
 
-          <!-- hero meta WITHOUT phone/address -->
-          <div class="hero-meta-row">
-            <div class="hero-meta-item">
-              <strong>
-                <span class="lang-ka">08:00 – 00:00</span>
-                <span class="lang-en">08:00 – 00:00</span>
-              </strong>
-              <span class="lang-ka">ორშ–შაბათი • კვირა 09:00–23:00</span>
-              <span class="lang-en">Mon–Sat • Sun 09:00–23:00</span>
-            </div>
+         <div class="hero-meta-row">
+  <div class="hero-meta-item">
+    <strong>
+      <span class="lang-ka">08:00 – 00:00</span>
+      <span class="lang-en">08:00 – 00:00</span>
+    </strong>
+    <span class="lang-ka">ორშ–შაბათი • კვირა 09:00–23:00</span>
+    <span class="lang-en">Mon–Sat • Sun 09:00–23:00</span>
+  </div>
 
-            <div class="hero-meta-item">
-              <strong>
-                <span class="lang-ka">აქტიური საზოგადოება</span>
-                <span class="lang-en">Active Community</span>
-              </strong>
-              <span class="lang-ka">judgment-free გარემო, სადაც ახალბედები და გამოცდილები ერთად ვარჯიშობენ.</span>
-              <span class="lang-en">Judgment-free gym where beginners and advanced train in the same space.</span>
-            </div>
-          </div>
+  <div class="hero-meta-item">
+    <strong>
+      <span class="lang-ka">აქტიური საზოგადოება</span>
+      <span class="lang-en">Active Community</span>
+    </strong>
+    <span class="lang-ka">judgment-free გარემო, სადაც ახალბედები და გამოცდილები ერთად ვარჯიშობენ.</span>
+    <span class="lang-en">Judgment-free gym where beginners and advanced train in the same space.</span>
+  </div>
+
+  <div class="hero-meta-item">
+    <strong>+995 32 214 90 05</strong>
+    <span class="lang-ka">მცხეთის ქუჩა 13, ვაკე</span>
+    <span class="lang-en">Mtskheta St 13, Vake</span>
+  </div>
+</div>
 
         </div>
 
@@ -1323,24 +1392,740 @@
     </section>
 
     <!-- WHY TSRE -->
-    <!-- (rest of your sections are unchanged, I’m leaving them as you had) -->
+    <section id="why">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">
+              <span class="lang-ka">რატომ TSRE</span>
+              <span class="lang-en">Why TSRE</span>
+            </div>
+            <h2 class="section-title">
+              <span class="lang-ka">დარბაზი რეალური ვარჯიშისთვის</span>
+              <span class="lang-en">Built For Real Training</span>
+            </h2>
+          </div>
+          <div class="section-sub">
+            <span class="lang-ka">
+              არა შემთხვევითი ქაოსი და არასწორი ატმოსფერო – აქ ფოკუსი არის ძალაზე, კონდიციაზე და განვითარებაზე ვაკეში.
+            </span>
+            <span class="lang-en">
+              No fake luxury, no chaos. TSRE focuses on real strength, conditioning and a stable community in Vake.
+            </span>
+          </div>
+        </div>
+
+        <div class="features-grid">
+          <article class="feature-card">
+            <div class="feature-icon">🏋️</div>
+            <h3 class="feature-title">
+              <span class="lang-ka">ინდვენტარი სერიოზული ვარჯიშისთვის</span>
+              <span class="lang-en">Serious Equipment</span>
+            </h3>
+            <p class="feature-text">
+              <span class="lang-ka">
+                მრავალფეროვანი ჰანტელები, ბარბელები, ტრენაჟორები და კარდიო ზონა – შეგიძლია იმუშაო როგორც ძალაზე, ისე ფორმაზე.
+              </span>
+              <span class="lang-en">
+                Full dumbbell rack, barbells, machines and cardio – you can bench, squat, deadlift and actually progress.
+              </span>
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">🔥</div>
+            <h3 class="feature-title">
+              <span class="lang-ka">კლასები, რომლებიც შედეგს იძლევა</span>
+              <span class="lang-en">Classes That Work</span>
+            </h3>
+            <p class="feature-text">
+              <span class="lang-ka">
+                ბოქსი, HIIT, სპინინგი, იოგა, პრესი და დუნდულა – არა “მსუბუქი ცეკვა”, არამედ მძიმე, მაგრამ კონტროლირებადი სესიები.
+              </span>
+              <span class="lang-en">
+                Boxing, HIIT, spinning, yoga, abs & glutes – not easy dance cardio, but structured hard sessions.
+              </span>
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <div class="feature-icon">⭕</div>
+            <h3 class="feature-title">
+              <span class="lang-ka">წრის ენერგია</span>
+              <span class="lang-en">Judgment-Free Circle</span>
+            </h3>
+            <p class="feature-text">
+              <span class="lang-ka">
+                “წრე” – ერთი სივრცე ახალბედებისთვის და გამოცდილებისთვის. საერთო ენერგია, საერთო საკმარისი დისციპლინა.
+              </span>
+              <span class="lang-en">
+                “TSRE” means “circle” – beginners and advanced in the same room, sharing the same energy without ego.
+              </span>
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
 
     <!-- CLASSES & SCHEDULE -->
-    <!-- ... -->
-    <!-- PRICING -->
-    <!-- ... -->
-    <!-- COACHES & REVIEWS -->
-    <!-- ... -->
-    <!-- GALLERY -->
-    <!-- ... -->
-    <!-- LOCATION & CONTACT -->
-    <!-- ... the rest of your HTML stays the same ... -->
+    <section id="classes">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">
+              <span class="lang-ka">კლასები და განრიგი</span>
+              <span class="lang-en">Classes & Schedule</span>
+            </div>
+            <h2 class="section-title">
+              <span class="lang-ka">ბოქსი • HIIT • სპინინგი • იოგა</span>
+              <span class="lang-en">Boxing • HIIT • Spinning • Yoga</span>
+            </h2>
+          </div>
+          <div class="section-sub">
+            <span class="lang-ka">
+              კომბინაცია ჩვეულებრივი დარბაზის ვარჯიშისა და ჯგუფური კლასების. ქვემოთ ნახავ მთავარ მიმართულებებსა და განახლებულ ცხრილს.
+            </span>
+            <span class="lang-en">
+              Combine classic gym work with group classes. Below you see the main class types plus the updated official timetable.
+            </span>
+          </div>
+        </div>
 
-    <!-- I’m not repeating the rest to save space – keep everything from CLASSES down exactly as in your last version. -->
+        <div class="classes-layout">
+          <div>
+            <div class="class-grid">
+              <article class="class-card">
+                <div class="class-tag">
+                  <span class="lang-ka">კონტაქტური</span>
+                  <span class="lang-en">Combat</span>
+                </div>
+                <div class="class-name">
+                  <span class="lang-ka">ბოქსი</span>
+                  <span class="lang-en">Boxing</span>
+                </div>
+                <div class="class-level">
+                  <span class="lang-ka">დამწყები და საშუალო დონე</span>
+                  <span class="lang-en">Beginner & Intermediate</span>
+                </div>
+                <p class="class-text">
+                  <span class="lang-ka">
+                    ტექნიკა, ჩანთაზე მუშაობა და კონდიცია – რეალურად სწავლობ დარტყმას და გაუმჯობესებულ ჩაგდებას.
+                  </span>
+                  <span class="lang-en">
+                    Technique, bag work and conditioning – learn how to actually throw punches and build real cardio.
+                  </span>
+                </p>
+                <div class="class-meta-row">
+                  <span>~60 min</span>
+                  <span class="lang-ka">დღის და საღამოს სლოტები</span>
+                  <span class="lang-en">Daytime & evening slots</span>
+                </div>
+              </article>
+
+              <article class="class-card">
+                <div class="class-tag">
+                  <span class="lang-ka">კონდიცია</span>
+                  <span class="lang-en">Conditioning</span>
+                </div>
+                <div class="class-name">HIIT</div>
+                <div class="class-level">
+                  <span class="lang-ka">ყველა დონე</span>
+                  <span class="lang-en">All Levels</span>
+                </div>
+                <p class="class-text">
+                  <span class="lang-ka">
+                    მოკლე, მაგრამ მძიმე ინტერვალები სხეულის წონით, კეტლბელებით და აპარატებით – ცხიმის დაწვა და გამძლეობა.
+                  </span>
+                  <span class="lang-en">
+                    Short, brutal intervals with bodyweight, kettlebells and machines – perfect for fat loss and endurance.
+                  </span>
+                </p>
+                <div class="class-meta-row">
+                  <span>~40 min</span>
+                  <span class="lang-ka">დილის და საღამოს ვარიანტები</span>
+                  <span class="lang-en">Midday & after-work</span>
+                </div>
+              </article>
+
+              <article class="class-card">
+                <div class="class-tag">
+                  <span class="lang-ka">ფორმა</span>
+                  <span class="lang-en">Strength & Shape</span>
+                </div>
+                <div class="class-name">
+                  <span class="lang-ka">წინელი პრესი და დუნდულა</span>
+                  <span class="lang-en">Abs & Glutes</span>
+                </div>
+                <div class="class-level">
+                  <span class="lang-ka">ყველა დონე</span>
+                  <span class="lang-en">All Levels</span>
+                </div>
+                <p class="class-text">
+                  <span class="lang-ka">
+                    ფოკუსირებული მუშაობა ტანზე და ქვედა ნაწილზე – დამატება ძალის ვარჯიშებთან, თუ გინდა ვიზუალური შედეგი.
+                  </span>
+                  <span class="lang-en">
+                    Focused work for core and lower body – add on top of lifting for visible results.
+                  </span>
+                </p>
+                <div class="class-meta-row">
+                  <span>~45 min</span>
+                  <span class="lang-ka">კვირაში 3–4-ჯერ</span>
+                  <span class="lang-en">3–4x per week</span>
+                </div>
+              </article>
+
+              <article class="class-card">
+                <div class="class-tag">
+                  <span class="lang-ka">მეტი მოქნილობა</span>
+                  <span class="lang-en">Mind • Body</span>
+                </div>
+                <div class="class-name">
+                  <span class="lang-ka">იოგა და მობილურობა</span>
+                  <span class="lang-en">Yoga & Mobility</span>
+                </div>
+                <div class="class-level">
+                  <span class="lang-ka">ყველა დონე</span>
+                  <span class="lang-en">All Levels</span>
+                </div>
+                <p class="class-text">
+                  <span class="lang-ka">
+                    ბალანსი, გაჭიმვა და ზურგის გაძლიერება – რომ მძიმე ვარჯიში ჯანმრთელად გააგრძელო.
+                  </span>
+                  <span class="lang-en">
+                    Balance, recovery and flexibility – keeps joints and spine ready for heavy training.
+                  </span>
+                </p>
+                <div class="class-meta-row">
+                  <span>~60 min</span>
+                  <span class="lang-ka">დილა და შაბათ-კვირა</span>
+                  <span class="lang-en">Mornings & weekends</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <aside class="schedule-card">
+            <div class="section-eyebrow">
+              <span class="lang-ka">ოფიციალური ცხრილი</span>
+              <span class="lang-en">Official Timetable</span>
+            </div>
+            <h3 class="section-title" style="font-size:1rem;">
+              <span class="lang-ka">ფასები, სავარჯიშოები და განრიგი</span>
+              <span class="lang-en">Pricing, Exercises & Schedule</span>
+            </h3>
+            <p style="font-size:0.8rem; color:var(--muted); margin:0.45rem 0 0.65rem;">
+              <span class="lang-ka">
+                განახლებული ცხრილი TSRE–დან – აბონემენტები, დამატებითი კლასები და განრიგი ერთ ეკრანზე.
+              </span>
+              <span class="lang-en">
+                Directly from TSRE’s latest update – memberships, complimentary classes and schedule in one place.
+              </span>
+            </p>
+            <img src="images/tsre-schedule.png" alt="TSRE pricing and class schedule" class="schedule-image">
+            <p class="schedule-note">
+              <span class="lang-ka">
+                ბოლო ცვლილებებისთვის ყოველთვის გადაამოწმე TSRE–ს Instagram story ან მოიკითხე რეცეფციაზე.
+              </span>
+              <span class="lang-en">
+                For last minute changes always check TSRE’s Instagram stories or ask at the front desk.
+              </span>
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRICING -->
+    <section id="pricing">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">
+              <span class="lang-ka">აბონემენტები</span>
+              <span class="lang-en">Membership</span>
+            </div>
+            <h2 class="section-title">
+              <span class="lang-ka">პატარა, მაგრამ გასაგები არჩევანი</span>
+              <span class="lang-en">Simple, Clear Options</span>
+            </h2>
+          </div>
+          <div class="section-sub">
+            <span class="lang-ka">
+              ფასები მიჰყვება ოფიციალურ ცხრილს. შენ ან კლუბის ადმინისტრატორი მარტივად შეცვლით რიცხვებს.
+            </span>
+            <span class="lang-en">
+              Numbers follow the official schedule image. You or the owner can quickly edit them later in the HTML.
+            </span>
+          </div>
+        </div>
+
+        <div class="pricing-grid">
+          <article class="pricing-card">
+            <div class="pricing-name">
+              <span class="lang-ka">ერთჯერადი ვიზიტი</span>
+              <span class="lang-en">Gym Bracelet</span>
+            </div>
+            <div class="pricing-price">20 ₾</div>
+            <div class="pricing-period">
+              <span class="lang-ka">ერთი შეხვედრა</span>
+              <span class="lang-en">Single entry</span>
+            </div>
+            <ul class="pricing-list">
+              <li>
+                <span class="pricing-dot">•</span>
+                <span class="lang-ka">დარბაზში ერთი ტრეინინგი.</span>
+                <span class="lang-en">One training session in the gym.</span>
+              </li>
+              <li>
+                <span class="pricing-dot">•</span>
+                <span class="lang-ka">იდეალურია საცდელად, სანამ აბონემენტს აიღებ.</span>
+                <span class="lang-en">Perfect to try TSRE before taking a full membership.</span>
+              </li>
+            </ul>
+            <button class="btn btn-outline" onclick="scrollToId('contact')">
+              <span class="lang-ka">ერთი ვიზიტი</span>
+              <span class="lang-en">Try One Visit</span>
+            </button>
+          </article>
+
+          <article class="pricing-card featured">
+            <div class="pricing-badge">
+              <span class="lang-ka">ყველაზე პოპულარული</span>
+              <span class="lang-en">Most Popular</span>
+            </div>
+            <div class="pricing-name">
+              <span class="lang-ka">1 თვიანი ულიმიტო</span>
+              <span class="lang-en">1-Month Unlimited</span>
+            </div>
+            <div class="pricing-price">195 ₾</div>
+            <div class="pricing-period">
+              <span class="lang-ka">ულიმიტო 30 დღე</span>
+              <span class="lang-en">Unlimited 30 days</span>
+            </div>
+            <ul class="pricing-list">
+              <li><span class="pricing-dot">•</span>
+                <span class="lang-ka">ულიმიტო შესვლა დარბაზში.</span>
+                <span class="lang-en">Unlimited gym access.</span>
+              </li>
+              <li><span class="pricing-dot">•</span>
+                <span class="lang-ka">ცხრილში მითითებული ჯგუფური კლასები.</span>
+                <span class="lang-en">Complimentary group classes from the timetable.</span>
+              </li>
+              <li><span class="pricing-dot">•</span>
+                <span class="lang-ka">უმარტივესი გზა სტაბილური ვარჯიშისთვის.</span>
+                <span class="lang-en">The easiest way to train consistently.</span>
+              </li>
+            </ul>
+            <button class="btn btn-primary" onclick="scrollToId('contact')">
+              <span class="lang-ka">შემოგვიერთდი</span>
+              <span class="lang-en">Join TSRE Today</span>
+              <span class="btn-icon-circle">›</span>
+            </button>
+            <div class="pricing-footer-note">
+              <span class="lang-ka">
+                3, 6 და 12 თვიანი პაკეტების ფასები იგივე ცხრილშია ნაჩვენები და შეიძლება ადვილად განახლდეს.
+              </span>
+              <span class="lang-en">
+                3, 6 and 12 month packs follow the same price list in the schedule image and can be updated anytime.
+              </span>
+            </div>
+          </article>
+
+          <article class="pricing-card">
+            <div class="pricing-name">
+              <span class="lang-ka">MetCon & Pilates / ბავშვთა პროგრამები</span>
+              <span class="lang-en">MetCon & Pilates / Kids</span>
+            </div>
+            <div class="pricing-price">
+              <span class="lang-ka">150 ₾ +</span>
+              <span class="lang-en">from 150 ₾</span>
+            </div>
+            <div class="pricing-period">
+              <span class="lang-ka">კურსის / თვის ღირებულება</span>
+              <span class="lang-en">Per course / month</span>
+            </div>
+            <ul class="pricing-list">
+              <li><span class="pricing-dot">•</span>
+                <span class="lang-ka">MetCon სესიები ძლიერი კონდიციისთვის.</span>
+                <span class="lang-en">MetCon conditioning sessions.</span>
+              </li>
+              <li><span class="pricing-dot">•</span>
+                <span class="lang-ka">დილით და საღამოს Pilates.</span>
+                <span class="lang-en">Morning / evening Pilates.</span>
+              </li>
+              <li><span class="pricing-dot">•</span>
+                <span class="lang-ka">ბავშვთა ტანვარჯიში და ბავშვთა ბოქსი.</span>
+                <span class="lang-en">Kids gymnastics and kids boxing programs.</span>
+              </li>
+            </ul>
+            <button class="btn btn-outline" onclick="scrollToId('contact')">
+              <span class="lang-ka">კითხვა ფასებზე</span>
+              <span class="lang-en">Ask About Classes</span>
+            </button>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- COACHES & REVIEWS -->
+    <section id="coaches">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">
+              <span class="lang-ka">გუნდი და გარემო</span>
+              <span class="lang-en">Team & Community</span>
+            </div>
+            <h2 class="section-title">
+              <span class="lang-ka">ტრენერები და წევრების აზრი</span>
+              <span class="lang-en">Coaches & Member Feedback</span>
+            </h2>
+          </div>
+          <div class="section-sub">
+            <span class="lang-ka">
+              ტექსტი მოგვიანებით შეიძლება შეიცვალოს რეალური სახელებით – ფოტოები აღებულია TSRE–ს Instagram–იდან.
+            </span>
+            <span class="lang-en">
+              You can later swap placeholder text for real names – photos already match TSRE’s Instagram vibe.
+            </span>
+          </div>
+        </div>
+
+        <div class="two-col">
+          <div>
+            <div class="coach-grid">
+              <article class="coach-card">
+                <div class="coach-photo">
+                  <img src="images/tsre-curl.jpg" alt="Strength coach at TSRE doing dumbbell curls">
+                </div>
+                <div class="coach-name">
+                  <span class="lang-ka">ძალის ტრენერი</span>
+                  <span class="lang-en">Strength Coach</span>
+                </div>
+                <div class="coach-role">
+                  <span class="lang-ka">ძალა და ჰიპერტროფია</span>
+                  <span class="lang-en">Strength & Hypertrophy</span>
+                </div>
+                <p class="coach-text">
+                  <span class="lang-ka">
+                    გასწავლის როგორ ააწყო პროგრამა მძიმე კომპაუნდებით და პროგრესული დატვირთვით – არა მხოლოდ “აპარატებზე”.
+                  </span>
+                  <span class="lang-en">
+                    Helps you build muscle with compound lifts and progressive overload – not random machine circuits.
+                  </span>
+                </p>
+                <div class="coach-badges">
+                  <span>Programming</span>
+                  <span>Muscle gain</span>
+                </div>
+              </article>
+
+              <article class="coach-card">
+                <div class="coach-photo">
+                  <img src="images/tsre-yoga.jpg" alt="Yoga coach at TSRE">
+                </div>
+                <div class="coach-name">
+                  <span class="lang-ka">იოგას ინსტრუქტორი</span>
+                  <span class="lang-en">Yoga Coach</span>
+                </div>
+                <div class="coach-role">
+                  <span class="lang-ka">იოგა და მოქნილობა</span>
+                  <span class="lang-en">Yoga & Flexibility</span>
+                </div>
+                <p class="coach-text">
+                  <span class="lang-ka">
+                    აბალანსებს მძიმე ვარჯიშს მობილურობისა და სიღრმისეულ გაჭიმვასთან, რომ გრძელვადიანად ჯანმრთელად ივარჯიშო.
+                  </span>
+                  <span class="lang-en">
+                    Balances heavy lifting with mobility and deep stretching so you can train long-term without pain.
+                  </span>
+                </p>
+                <div class="coach-badges">
+                  <span>Mobility</span>
+                  <span>Posture</span>
+                </div>
+              </article>
+
+              <article class="coach-card">
+                <div class="coach-photo">
+                  <img src="images/tsre-pullup.jpg" alt="Coach leading pull-up training at TSRE">
+                </div>
+                <div class="coach-name">
+                  <span class="lang-ka">ფუნქციური მწვრთნელი</span>
+                  <span class="lang-en">Functional Coach</span>
+                </div>
+                <div class="coach-role">
+                  <span class="lang-ka">HIIT და სხეულის წონა</span>
+                  <span class="lang-en">HIIT & Bodyweight</span>
+                </div>
+                <p class="coach-text">
+                  <span class="lang-ka">
+                    იყენებს სხეულის წონას, კეტლბელებს და აპარატებს, რომ ძალა და კონდიცია ცხოვრებაში გადმოგეტანოს.
+                  </span>
+                  <span class="lang-en">
+                    Uses bodyweight, kettlebells and machines to build conditioning that actually transfers to real life.
+                  </span>
+                </p>
+                <div class="coach-badges">
+                  <span>HIIT</span>
+                  <span>Conditioning</span>
+                </div>
+              </article>
+
+              <article class="coach-card">
+                <div class="coach-photo">
+                  <img src="images/tsre-weights.jpg" alt="TSRE free weight area">
+                </div>
+                <div class="coach-name">
+                  <span class="lang-ka">პერსონალი დარბაზში</span>
+                  <span class="lang-en">Floor Trainers</span>
+                </div>
+                <div class="coach-role">
+                  <span class="lang-ka">ტექნიკა და უსაფრთხოება</span>
+                  <span class="lang-en">Gym Support</span>
+                </div>
+                <p class="coach-text">
+                  <span class="lang-ka">
+                    დარბაზში მუდმივად მყოფი ინსტრუქტორები, რომლებიც დაგეხმარებიან სავარჯიშოს აწყობაში და ტექნიკის გასწორებაში.
+                  </span>
+                  <span class="lang-en">
+                    Trainers on the gym floor to help with exercises, setup and safety – especially useful for beginners.
+                  </span>
+                </p>
+                <div class="coach-badges">
+                  <span>Beginners</span>
+                  <span>Technique help</span>
+                </div>
+              </article>
+            </div>
+          </div>
+
+          <aside class="reviews-card">
+            <div class="reviews-header">
+              <div>
+                <div class="section-eyebrow">
+                  <span class="lang-ka">შეფასებები</span>
+                  <span class="lang-en">Reviews</span>
+                </div>
+                <div class="reviews-score">4.4 ★ / 5.0</div>
+                <div style="font-size:0.75rem; color:var(--muted);">
+                  <span class="lang-ka">Google–ისა და ადგილობრივი პლატფორმების მიხედვით</span>
+                  <span class="lang-en">Based on Google & local platforms</span>
+                </div>
+              </div>
+              <div>
+                <div class="stars">★★★★★</div>
+                <div style="font-size:0.72rem;">
+                  <span class="lang-ka">დარბაზი • ფიტნეს კლუბი • ვაკე</span>
+                  <span class="lang-en">Gym • Fitness Club • Vake</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="review-item">
+              <div class="review-name">
+                <span class="lang-ka">„მაგარი დარბაზი“</span>
+                <span class="lang-en">“Excellent gym”</span>
+              </div>
+              <p class="review-text">
+                <span class="lang-ka">
+                  „მაღალი ხარისხის დარბაზი. ბევრი აპარატი. მეგობრული პერსონალი. თუ გჭირდება, ტრენერები ყოველთვის გვერდით არიან.“
+                </span>
+                <span class="lang-en">
+                  “Excellent gym. A wide range of equipment. Friendly staff. Trainers are available if needed.”
+                </span>
+              </p>
+            </div>
+
+            <div class="review-item">
+              <div class="review-name">
+                <span class="lang-ka">„ძალიან კარგი საზოგადოება“</span>
+                <span class="lang-en">“Great community”</span>
+              </div>
+              <p class="review-text">
+                <span class="lang-ka">
+                  „აქტიური გარემო, სადაც მარტივად გადაღლი ენერგიას და თავს კომფორტულად გრძნობ, მიუხედავად დონისა.“
+                </span>
+                <span class="lang-en">
+                  “Active community where you can recycle your energy in a judgment-free environment.”
+                </span>
+              </p>
+            </div>
+
+            <div class="review-item">
+              <div class="review-name">
+                <span class="lang-ka">„საუკეთესო ვარიანტი ვაკეში“</span>
+                <span class="lang-en">“Best in Vake”</span>
+              </div>
+              <p class="review-text">
+                <span class="lang-ka">
+                  „ერთ-ერთი საუკეთესო არჩევანი ვაკეში – დიდი სივრცე, ბევრი აპარატი, კლასები და კარგი ატმოსფერო.“
+                </span>
+                <span class="lang-en">
+                  “One of the best options in Vake – big space, lots of equipment, classes and a good atmosphere.”
+                </span>
+              </p>
+            </div>
+
+            <p style="margin-top:0.5rem; font-size:0.7rem; color:var(--muted);">
+              <span class="lang-ka">მოგვიანებით შეგიძლია ჩანაცვლდეს რეალური Google / Facebook / Madloba კომენტარებით.</span>
+              <span class="lang-en">Later you can replace these with real Google / Facebook / Madloba reviews.</span>
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">
+              <span class="lang-ka">TSRE–ს სივრცე</span>
+              <span class="lang-en">Inside TSRE</span>
+            </div>
+            <h2 class="section-title">
+              <span class="lang-ka">დარბაზი, ლოგოს კედელი და სტუდია</span>
+              <span class="lang-en">Gym, Logo Wall & Studio</span>
+            </h2>
+          </div>
+          <div class="section-sub">
+            <span class="lang-ka">
+              მაღალი ხარისხის ფოტოები TSRE–ს Instagram–იდან, რომ სტუმარმა ვებ–გვერდიდანვე იგრძნოს გარემო.
+            </span>
+            <span class="lang-en">
+              High-quality photos from TSRE’s Instagram so visitors instantly feel the vibe before they visit.
+            </span>
+          </div>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-main">
+            <img src="images/tsre-logo-wall.jpg" alt="TSRE round logo on wall">
+          </div>
+          <div class="gallery-side">
+            <div class="gallery-thumb">
+              <img src="images/tsre-weights.jpg" alt="TSRE free-weight area with dumbbells and bars">
+            </div>
+            <div class="gallery-thumb">
+              <img src="images/tsre-curl.jpg" alt="Member training at TSRE gym">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LOCATION & CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <div class="section-eyebrow">
+              <span class="lang-ka">ლოკაცია და კონტაქტი</span>
+              <span class="lang-en">Location & Contact</span>
+            </div>
+            <h2 class="section-title">
+              <span class="lang-ka">თბილისის გულში, ვაკეში</span>
+              <span class="lang-en">In The Heart Of Vake</span>
+            </h2>
+          </div>
+          <div class="section-sub">
+            <span class="lang-ka">
+              მარტივად მისასვლელი „მრგვალი ბაღის“ მხრიდან და მთავარი ქუჩებიდან – კომფორტული წვდომა როგორც ვაკიდან, ისე საბურთალოდან.
+            </span>
+            <span class="lang-en">
+              Easy to reach from Round Garden and main Vake streets – simple access from Rustaveli and Saburtalo as well.
+            </span>
+          </div>
+        </div>
+
+        <div class="contact-layout">
+          <div class="map-card">
+            <iframe src="https://www.google.com/maps?q=TSRE,+Mtskheta+St+13,+Tbilisi&output=embed"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    allowfullscreen>
+            </iframe>
+          </div>
+
+          <aside class="contact-card">
+            <div class="contact-row">
+              <strong>
+                <span class="lang-ka">მისამართი</span>
+                <span class="lang-en">Address</span>
+              </strong>
+              <span class="lang-ka">მცხეთის ქუჩა 13, ვაკე, თბილისი, საქართველო</span>
+              <span class="lang-en">Mtskheta St 13, Vake, Tbilisi, Georgia</span>
+            </div>
+            <div class="contact-row">
+              <strong>Phone:</strong>
+              <a href="tel:+995322149005">+995 32 214 90 05</a>
+            </div>
+            <div class="contact-row">
+              <strong>Instagram:</strong>
+              <a href="https://www.instagram.com/tsre.ge" target="_blank">@tsre.ge</a>
+            </div>
+            <div class="contact-row">
+              <strong>
+                <span class="lang-ka">სამუშაო საათები</span>
+                <span class="lang-en">Working Hours</span>
+              </strong>
+              <span class="lang-ka">ორშ–პარ 08:00–00:00 • შაბათი 08:00–23:00 • კვირა 09:00–23:00</span>
+              <span class="lang-en">Mon–Fri 08:00–00:00 • Sat 08:00–23:00 • Sun 09:00–23:00</span>
+            </div>
+
+            <div class="contact-badges">
+              <span>ქართული</span>
+              <span>English</span>
+              <span>Русский</span>
+            </div>
+
+            <form class="contact-form">
+              <div>
+                <div class="field-label">
+                  <span class="lang-ka">სახელი</span>
+                  <span class="lang-en">Name</span>
+                </div>
+                <input class="field-input" type="text" name="name" placeholder="Your name">
+              </div>
+              <div>
+                <div class="field-label">
+                  <span class="lang-ka">ტელეფონი / WhatsApp</span>
+                  <span class="lang-en">Phone / WhatsApp</span>
+                </div>
+                <input class="field-input" type="tel" name="phone" placeholder="+995 ...">
+              </div>
+              <div class="field-full">
+                <div class="field-label">
+                  <span class="lang-ka">რა გაინტერესებს?</span>
+                  <span class="lang-en">What are you interested in?</span>
+                </div>
+                <textarea class="field-textarea" name="message" placeholder="Example: 1-month unlimited + boxing classes in the evening"></textarea>
+              </div>
+              <div class="field-full">
+                <button type="button" class="btn btn-primary" style="width:100%;">
+                  <span class="lang-ka">განაცხადის გაგზავნა</span>
+                  <span class="lang-en">Send Request</span>
+                </button>
+              </div>
+            </form>
+            <p class="contact-footnote">
+              <span class="lang-ka">
+                მოგვიანებით ეს ღილაკი შეიძლება პირდაპირ გახსნიდეს WhatsApp–ს, Instagram DM–ს ან ელ–ფოსტას – ახლა ვიზუალური მაგალითია.
+              </span>
+              <span class="lang-en">
+                Later this button can open WhatsApp / Instagram DM or send an email directly to TSRE – for now it’s visual only.
+              </span>
+            </p>
+          </aside>
+        </div>
+      </div>
+    </section>
   </main>
 
   <!-- FOOTER -->
-  <!-- (unchanged) -->
   <footer>
     <div class="container footer-inner">
       <div>
